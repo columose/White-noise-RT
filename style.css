@@ -1,0 +1,78 @@
+html {
+    font-size: 15px; 
+    font-family: "Open Sans", sans-serif;
+  } 
+  
+  h4{
+    font-size: large;
+    font-family: "Open Sans";
+  }
+
+  .Play-repeated-noise-container{
+    position:absolute;
+    top: 100px;
+    left: 30px;
+    background-color: rgb(255, 255, 255);  
+    color: rgb(0, 0, 0);  
+    padding: 20px;  
+    text-align: left;
+    border: 5px solid black;
+    width: 430px;
+  }
+  
+  .Filtered-noise-canvas{
+    position: absolute;
+    top: 100px;
+    width:600px;
+    left:550px;
+    border: 5px solid black;
+    padding:30px;
+  }
+  
+  canvas {
+    position:relative;
+    left:60px;
+    background-color: rgb(255, 253, 253);
+    border:2px solid black;
+  }
+  
+  .Filter-containter{
+    position:absolute;
+    left:500px;
+    top:440px;
+  }
+  
+  .filter-vars {
+    font-weight: bold;
+  }
+  
+  .freq{
+    position: absolute; 
+    top: 480px;
+    left: -10px; 
+    transform: rotate(-90deg) translateY(50%);
+    background: rgb(255, 255, 255); 
+    padding: 0px; 
+    font-size: 20px;
+  }
+  .time{
+    position:relative;
+    left:200px;
+    top:250px;
+    font-size: 20px;
+  }
+  
+  .Confirmation-container{
+    position:absolute;
+    top:100px;
+    left: 1250px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);  
+    color: rgb(0, 0, 0);  
+    padding: 20px; 
+    border-radius: 0px; 
+    text-align: left;
+    border: 5px solid black;
+  }
+
+  

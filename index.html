@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "Play-repeated-noise-container" id = 'playCont'>
+        <h2>Step 1</h2>
+        <h3>Press 'Space' on your keyboard to play repeated noise.</h3>
+        <h3>Press 'Escape' to stop the noise from being played.</h3>
+    </div>
+
+    <div class = "Filtered-noise-canvas" id = 'filterCont'>
+        <h2>Step 2</h2>
+        <h3>Next, try to locate the repeat that you heard in the noise by filtering its frequency.</h3>
+        <h3>You can do this by moving the grey rectangle on the canvas below.</h3>
+        <h3>You can filter higher frequencies by moving the rectangle upwards</h3>
+        <h4>Move the position of the rectangle with the following arrows &#8593;&#8595; </h3>
+        <h4>Control the height of the rectangle using 'h'.</h3> 
+        <h4>Press the 'Shift' key once to alter between increasing or decreasing the height.</h3>
+
+        <p class = "freq">Frequency (Hz)</p>
+        <p class = "time">Time(ms)</p>
+        <canvas id="filterCanvas" width="400" height="200"></canvas>
+        <div class = "Filter-containter">
+            <p class="filter-vars">Filter Variables</p>
+            <p>Q Value: <span id="qValue">1</span></p>
+            <p>Centre Frequency: <span id="CF">1</span></p>
+            <p>Bandwidth: <span id="BW">1</span></p>
+        </div>
+    </div>
+    <div class = "Confirmation-container" id = 'confirmCont'>
+        <h2>Step 3</h2>
+        <h3>Press 'Enter' if you heard the repeat in the filtered segment</h3>
+    </div>
+    <script type = "module" src = "white noise RT.js" defer></script>  
+</body>
+</html>
